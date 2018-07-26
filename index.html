@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Athithi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" >
+					<h1 id="logo" style="font-size: 3.5rem;padding: 15px;font-family: myFont"><a href="index.html">Athithi</a></h1>
+					<nav id="nav" style="font-size: 1.2rem;font-weight: bolder">
+						<ul>
+							<li><a href="index.html" style="font-weight: bold">Home</a></li>
+							<li ><a class="btn btn-primary" href="signinform.html" style="font-weight: bold">Sign in | Sign up</a></li>
+							
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<div class="content" style="text-align: center;">
+						<header style="text-align: center">
+							<h2>Build for millennials</h2>
+							<p>
+							And there are no hoverboards or flying cars.<br />
+							Just apps. Lots of mother flipping apps.
+							</p>
+							<p>
+							And there are no hoverboards or flying cars.<br />
+							Just apps. Lots of mother flipping apps.
+							</p>
+						</header>
+
+
+						<div class="slideshow-container ">
+
+							<div class="mySlides fade">
+							<img src="./images/im2.jpg" style="width:100%">
+							</div>
+						
+							<div class="mySlides fade">
+							<img src="./images/im3.jpg" style="width:100%">
+							</div>
+						
+							<div class="mySlides fade">
+							<img src="./images/im4.jpg" style="width:100%">
+							</div>
+						
+						</div>
+
+						
+						
+						<!-- The dots/circles -->
+						<div style="text-align:center">
+							<span class="dot" onclick="currentSlide(1)"></span> 
+							<span class="dot" onclick="currentSlide(2)"></span> 
+							<span class="dot" onclick="currentSlide(3)"></span> 
+						</div>
+	  
+					</div>
+				</section>
+
+
+			<!-- Footer -->
+				<footer id="footer" style="height: 20rem;">
+					<ul class="icons">
+						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; 2018 All rights reserved.</li><li>Design: <a href="index.html">Bit Coders</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script>
+				var slideIndex = 0;
+				showSlides();
+				
+				function showSlides() {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					for (i = 0; i < slides.length; i++) {
+					   slides[i].style.display = "none";  
+					}
+					slideIndex++;
+					if (slideIndex > slides.length) {slideIndex = 1}    
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";  
+					dots[slideIndex-1].className += " active";
+					setTimeout(showSlides, 2000); // Change image every 2 seconds
+				}
+			</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
